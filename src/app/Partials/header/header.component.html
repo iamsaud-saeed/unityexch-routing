@@ -1,0 +1,108 @@
+<div class="site-header">
+
+  <!-- *ngIf="!isLogin" -->
+  <div class="logo-search" [ngClass]=" !isLogin ? 'smallScreenShow bigScreenShow' : 'bigScreenShow smallScreenHide' ">
+    <i class="fas fa-search "></i>
+    <img class="site-logo" src="assets/header-logo/unityexch-logo.png" alt="logo">
+
+
+    <input class="form-control me-2 searchbar" type="search" placeholder="  Search" aria-label="Search">
+
+  </div>
+  <!-- *ngIf="isLogin" class="" -->
+  <div [ngClass]=" isLogin ? 'smallScreenShow bigScreenHide' : 'bigScreenHide smallScreenHide' ">
+    <a class="open-bets" href="javascript:;" title="Setting">
+      <img src="../../assets/download.svg"> &nbsp;Bets </a>
+  </div>
+  <div class="header-buttons" *ngIf="!isLogin">
+
+    <div class="header-uname-pass">
+      <input class="form-control me-2 username" type="text" placeholder="Username">
+      <input type="text" class="password form-control me-2" placeholder="Password">
+    </div>
+    <div class="login-signup">
+      <button class="btn btn-danger m-2 login">
+        <b style="width: 33px; height: 18px;" (click)="isLogin =!isLogin">Login </b> <i class="fa fa-sign-in-alt"></i>
+      </button>
+      <button class="btn btn-warning signup"><b>Sign up </b></button>
+    </div>
+
+  </div>
+  <!-- *ngIf="isLogin" -->
+  <div class="relaod-setting-banking-btns"
+    [ngClass]=" !isLogin ? 'smallScreenHide bigScreenShow' : 'smallScreenShow bigScreenShow' ">
+    <!-- [ngClass]=" isLogin ? 'show-user-blnc' : 'hide-user-blnc' "   -->
+    <div class="user-blnc" [ngClass]=" isLogin ? 'bigScreenShow  smallScreenShow' : 'smallScreenHide bigScreenHide' ">
+      <div class="balance" style="text-align: center;">
+        <span style="margin-right: 4px; display: block;"> Main <strong>PTI {{userBalanceTotal | currency :''
+            :''}}</strong>
+        </span>
+        <span class="exp-topcount">Exposure <a class="text-white">
+            <strong>(<span class="exp-red">{{userExposure | currency :'':''}}</span>) </strong>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="login-refresh-MAcnt-btn"
+      [ngClass]=" !isLogin ? 'smallScreenHide bigScreenHide' : 'bigScreenShow smallScreenHide' ">
+
+      <div class="">
+        <span class="head-refresh">
+          <a id="menuRefresh" style="cursor: pointer"></a>
+        </span>
+        <a class="a-referesh " href="javascript:;" title="Setting">
+          <img src="../../../assets/reload-bg-transparant.gif">
+          <!-- <i class="fa-solid fa-rotate-right" style="color: #c28f1b;"></i> -->
+        </a>
+      </div>
+
+
+
+      <li class="account-wrap-new dropdown hidden-xs" dropdown="" placement="bottom right">
+        <a aria-haspopup="true" class="nav-link myaccnt" data-toggle="dropdown" (click)="ShowMyAccount =!ShowMyAccount"
+          dropdowntoggle="" href="javascript:;" id="accountPopup" role="button" style="cursor: pointer">My Account</a>
+        <!-- <i class="fa-solid fa-rotate-right" style="color: #c28f1b;size: 12px;">My Account</i> -->
+        <div aria-labelledby="simple-dropdown" *ngIf="ShowMyAccount" class="dropdown-menu dropdown-menu-right show"
+          style="inset: 100% 20px auto auto; transform: translateY(0px);">
+          <div class="dropdown-header text-left">
+            <strong>exchange</strong>
+          </div>
+          <a class="dropdown-item" href="#/myprofile">My Profile</a>
+          <a class="dropdown-item" href="#/refer-and-earn">Refer &amp; Earn</a>
+          <a class="dropdown-item" href="#/rolling-commission">Rolling Commission</a>
+          <a class="dropdown-item" href="#/banking">Banking</a>
+          <a class="dropdown-item" href="#/account-statement">Account Statement</a>
+          <a class="dropdown-item" href="#/bet-history">Bets History</a>
+          <a class="dropdown-item" href="#/profit-loss">Profit &amp; Loss</a>
+          <a class="dropdown-item" href="#/password-history">Password History</a>
+          <a class="dropdown-item" href="#/activity-log">Activity Log</a>
+          <a class="dropdown-item drp-logout">
+            <button class="btn btn-primary logout-btn">LOGOUT <i aria-hidden="true" class="fa fa-sign-out ml2"></i>
+            </button>
+          </a>
+        </div>
+      </li>
+    </div>
+    <div class="bet-refresh "
+      [ngClass]=" !isLogin ? 'smallScreenHide bigScreenHide' : 'bigScreenHide smallScreenShow' ">
+      <span class="head-refresh">
+        <a id="menuRefresh" style="cursor: pointer"></a>
+      </span>
+      <a class="a-referesh" href="javascript:;" title="Setting">
+        <img src="/../assets/download (1).svg">
+      </a>
+    </div>
+    <div class="bet-setting ml-2"
+      [ngClass]=" !isLogin ? 'smallScreenHide bigScreenHide' : 'bigScreenHide smallScreenShow' ">
+      <a class="a-setting" href="#/banking">
+        <i class="fa fa-bank fa-lg"></i>
+      </a>
+    </div>
+    <div class="bet-setting ml-2 mr-1"
+      [ngClass]=" !isLogin ? 'smallScreenHide bigScreenHide' : 'bigScreenHide smallScreenShow' ">
+      <a class="a-setting" href="javascript:;" title="Setting">
+        <img src="../../assets/setting-header-logo.svg">
+      </a>
+    </div>
+  </div>
+</div>

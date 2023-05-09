@@ -1,0 +1,12 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
+
+:root{
+    --headRefreshPS: -80px -1800px;
+    --headAccountPS: 0 -800px;
+
+    --signup-btns-background:linear-gradient(-180deg, #fd8f3b 0%, #fd3523 100%);
+    --login-btn-color: linear-gradient(-180deg, #f72424 0%, #bb1c00 100%);
+    --singup-text-color:white;
+    --open-bets-shadow-clr: inset 0 1px 0 0 rgba(255, 255, 255, .4);
+    --open-bets-border: #0b1933;
+}

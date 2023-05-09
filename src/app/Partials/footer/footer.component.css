@@ -1,0 +1,101 @@
+
+.support-wrap{
+    display: block;
+    color: rgba(0,0,0,.6);
+    font-size: 13px;
+    display: flex;
+}
+
+.support-wrap dl{
+    margin-right: 10px;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}  
+.mobile-footer-menu
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(-180deg,#243a48 20%,#172732 91%);
+    color: #fff;
+    z-index: 9999;
+  
+}
+
+.mobile-footer-menu a {
+    width: 20vw;
+    height: 13.33333vw;
+    box-sizing: border-box;
+    color: #fff!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 3.2vw;
+    text-align: center;
+    line-height: 1.1;
+    padding: 1.86667vw 2.66667vw 0;
+    display: block;
+}
+
+a{
+    
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.mobile-footer-menu ul li {
+    list-style: none;
+}
+.mobile-footer-menu img {
+    width: 7.33333vw;
+    height: 7.33333vw;
+    margin: 0 auto 0.53333vw;
+    display: block;
+}
+
+.mobile-footer-menu ul {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+}
+.mobile-footer-menu .icon-sports {
+    width: 8.53333vw;
+    height: 6.93333vw;
+    margin: -2.13333vw auto 1.06667vw;
+}
+
+ 
+.mobile-footer-menu .main-nav a::before {
+    content: "";
+    position: absolute;
+    top: -4.26667vw;
+    width: 100%;
+    left: 0;
+    height: 4.53333vw;
+    background-image: url("../../../assets/footer-logos/download.svg");
+    /* background-image: url(data:image/svg+xml<svg width="75" height="16" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="19.56%" x2="50%" y2="90.65%" id="a"><stop stop-color="%23243A48" offset="0%"/><stop stop-color="%23172732" offset="100%"/></linearGradient></defs><path d="M74.98 16H75v50H0V16h.02C.7 15.33 16.36.02 37.5.02v8-8C58.64.02 74.3 15.33 74.98 16z" fill="url(%23a)" fill-rule="evenodd"/></svg>); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    pointer-events: none;
+    z-index: -1;
+    display: block;
+}
+
+.main-nav{
+    position: relative;;
+}
+
+@media only screen and (min-width: 992px) {
+    .mobile-footer-menu {
+      display: none;
+    }
+  
+   
+  }

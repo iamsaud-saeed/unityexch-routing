@@ -1,0 +1,408 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    margin: 0%;
+    padding: 7px;
+
+    position: absolute;
+    flex-direction: row;
+
+}
+
+.searchbar {
+    height: 25px;
+    max-width: 400px;
+    margin-left: 30px;
+    border-radius: 0.2rem;
+
+}
+
+.logo-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.open-bets img {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    /* background: url("data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="rgb(255,255,255)" fill-rule="nonzero" d="M19.314 6.38c-.41-1.052-.987-2.018-1.708-2.862-1.49-1.75-3.574-2.97-5.94-3.368C11.125.06 10.57 0 10 0c-.57 0-1.124.06-1.667.15-2.365.398-4.447 1.62-5.94 3.367-.72.845-1.297 1.81-1.707 2.863C.25 7.504 0 8.722 0 10c0 1.175.213 2.297.585 3.344.38 1.066.927 2.05 1.62 2.914 1.503 1.868 3.662 3.178 6.128 3.592.543.09 1.098.15 1.667.15.57 0 1.124-.06 1.667-.15 2.466-.414 4.625-1.724 6.127-3.592.694-.864 1.242-1.848 1.62-2.913.373-1.047.586-2.17.586-3.345 0-1.278-.25-2.496-.686-3.62zm-1.173.678l-1.747 1.01c-.332-1.095-.937-2.07-1.735-2.848l1.764-1.02c.746.826 1.333 1.793 1.72 2.858zM15.348 10c0 2.948-2.398 5.347-5.347 5.347-2.95 0-5.347-2.4-5.347-5.347 0-2.948 2.398-5.347 5.347-5.347 2.95 0 5.347 2.4 5.347 5.347zM10 1.333c.57 0 1.127.06 1.667.165v2.04c-.534-.137-1.09-.218-1.667-.218-.576 0-1.133.08-1.667.22V1.497c.54-.106 1.097-.165 1.667-.165zM3.578 4.2l1.765 1.02c-.8.778-1.404 1.753-1.736 2.847L1.86 7.057c.385-1.065.973-2.03 1.718-2.856zm-1.82 8.467l1.775-1.024c.282 1.112.84 2.11 1.604 2.923L3.38 15.58c-.717-.848-1.272-1.834-1.622-2.913zm8.242 6c-.57 0-1.127-.06-1.667-.165v-2.04c.534.137 1.09.218 1.667.218.576 0 1.133-.08 1.667-.22v2.042c-.54.106-1.097.165-1.667.165zm6.62-3.087l-1.757-1.014c.763-.81 1.322-1.81 1.604-2.923l1.775 1.025c-.35 1.078-.905 2.064-1.622 2.912zm-6.003-6.325c1.174.418 1.647.966 1.647 1.862 0 .887-.62 1.644-1.755 1.843v.514c0 .27-.218.488-.485.488s-.483-.218-.483-.488v-.444c-.39-.018-.772-.088-1.098-.187-.332-.1-.526-.448-.44-.787l.005-.017c.035-.145.13-.265.258-.335.13-.07.28-.08.42-.03.328.117.708.2 1.11.2.563 0 .947-.22.947-.618 0-.38-.315-.618-1.045-.867-1.056-.358-1.775-.856-1.775-1.822 0-.877.61-1.564 1.667-1.773v-.458c0-.285.24-.513.53-.486.25.025.436.247.436.5v.375c.347.016.634.062.875.125.315.082.504.406.423.723l-.01.034c-.034.14-.124.258-.248.328s-.27.086-.407.043c-.238-.075-.538-.137-.908-.137-.642 0-.848.28-.848.56 0 .327.344.536 1.183.855z"/></svg>"); */
+
+}
+
+.open-bets {
+    text-decoration: none;
+}
+
+
+.header-buttons {
+
+    display: flex;
+    margin-right: 2px;
+    align-items: center;
+
+
+}
+
+.site-logo {
+    width: 160px;
+    /* height: 68px; */
+    display: flex;
+    /* margin: 8px; */
+
+    height: 55px;
+    margin-left: -8px;
+
+}
+
+.me-2 {
+    border-radius: 0.2em;
+    margin-right: 1.5rem !important;
+
+}
+
+.login {
+
+    background: var(--login-btn-color);
+    border: none;
+    width: 80px;
+    font-size: 12px;
+    line-height: 7px;
+    height: 33px;
+    margin-right: 12px;
+    line-height: normal;
+    border-radius: 0.2rem;
+    height: 25px;
+    border-radius: 0.2rem;
+
+}
+
+.signup {
+    background: var(--signup-btns-background);
+    border: none;
+    font-size: 12px;
+    width: 80px;
+    height: 25px;
+    margin: 0 10px;
+    line-height: 7px;
+    color: var(--singup-text-color);
+    border-radius: 0.2rem;
+
+}
+
+.header-uname-pass {
+    display: flex;
+    height: 25px;
+    /* margin-right: 12px; */
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.login-signup {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.open-bets {
+    color: white;
+    box-shadow: var(--open-bets-shadow-clr);
+    height: 9.33333vw;
+    line-height: 5.33333vw;
+    font-weight: 700;
+    border-radius: 1.06667vw;
+    border: 1px solid var(--open-bets-border);
+    padding: 2.6vw 1.86667vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bet-refresh {
+    color: #fff;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .4);
+    height: 9.33333vw;
+    line-height: 5.33333vw;
+    font-weight: 700;
+    border-radius: 1.06667vw;
+    border: 1px solid #0b1933;
+    padding: 2.6vw 1.86667vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 6px;
+
+}
+
+.bet-setting {
+    color: #fff;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .4);
+    height: 9.33333vw;
+    line-height: 5.33333vw;
+    font-weight: 700;
+    border-radius: 1.06667vw;
+    border: 1px solid #0b1933;
+    padding: 2.6vw 1.86667vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 6px;
+}
+
+.relaod-setting-banking-btns {
+    display: flex;
+    margin-right: -6px;
+    align-items: center;
+    position: relative;
+
+}
+
+.exp-red {
+    color: red;
+}
+
+.text-white {
+    text-decoration: none;
+}
+
+.bet-setting a {
+    margin-left: -2px;
+    color: white;
+}
+
+.user-blnc {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    display: block ;
+}
+
+.user-blnc,
+.refresh-blnc {
+    margin-right: 10px;
+    color: white;
+}
+
+.exp-topcount {
+    display: block;
+    margin-left: 0;
+}
+
+.head-refresh {
+    margin-left: 4px;
+    position: relative;
+    line-height: 25px;
+    display: block;
+    float: left;
+}
+
+
+.head-refresh a {
+    background-position: var(--headRefreshPS);
+    height: 25px;
+    width: 30px;
+    background-image: url('../../../assets/top-s7a30022368.ad9165bedd40e7e01e2c.png');
+    background-repeat: no-repeat;
+    color: #ffb80c;
+    font-size: 0;
+    text-indent: -99999px;
+    display: block;
+}
+.account-wrap-new .myaccnt {
+    width: 130px;
+    background: url('../../../assets/top-s7a30022368.ad9165bedd40e7e01e2c.png') no-repeat;
+    text-indent: 27px;
+    position: relative;
+    line-height: 25px;
+    background-position: var(--headAccountPS);
+    margin-left: 10px;
+    float: left;
+    font-size: 12px;
+    display: inline;
+    /* color: var(--myAccountcolor)!important; */
+    color: white;
+    padding: 0;
+}
+.nav-link myaccnt{
+    text-decoration: none;
+}.after-login-refresh-btn{
+    display: flex;
+}
+.dropdown-item{
+    cursor: pointer;
+    min-width: 220px;
+    border-bottom: 1px solid #c8ced3;;
+}
+.drp-logout{
+    width: 220px;
+    height: 37px;;
+    
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 222px;
+    height: 310px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0;
+    margin: 0.125rem 0 0;
+    font-size: .875rem;
+    color: #23282c;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c8ced3;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 5px rgba(0,0,0,.5);
+
+}
+.dropdown-menu.show {
+    display: block;
+}
+account-wrap-new .dropdown-menu {
+    box-shadow: 0 4px 5px rgba(0,0,0,.5);
+}
+.app-header .dropdown-menu {
+    padding-bottom: 0;
+    line-height: 1.5;
+}
+.app-header .dropdown-menu {
+    padding-bottom: 0;
+    line-height: 1.5;
+}
+.logout-btn, .logout-btn:hover {
+    width: 100%;
+    padding: 7px 10px 5px;
+    font-weight: 700;
+    background-color: #7e97a7;
+    height: 27px;
+    line-height: 10px;
+    font-size: 13px;
+}
+
+
+.app-header .dropdown-item {
+    cursor: pointer;
+    min-width: 220px;
+}
+
+.logout-btn, .logout-btn:hover {
+    width: 100%;
+    padding: 7px 10px 5px;
+    font-weight: 700;
+    background-color: #1f2c31;
+    height: 27px;
+    line-height: 10px;
+    font-size: 13px;
+    margin-right: 4px;
+}
+.text-left {
+    text-align: left!important;
+}
+.user-blnc{
+    display: block;
+}
+.account-wrap-new .dropdown-header {
+    border-bottom: 1px solid #333;
+}
+.dropdown-header {
+    display: block;
+    margin-bottom: 0;
+    font-size: .765625rem;
+    color: #1f2c31;
+    background: #e4e7ea;
+    white-space: nowrap;
+    border-bottom: 1px;
+}
+.dropdown-item {
+    padding: 5px 10px;
+    height: 26px;
+    line-height: 11px;
+    padding: 5px 10px;
+}
+.dropdown-item i {
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: -10px;
+    color: #c8ced3;
+    text-align: center;
+}
+
+
+/* //below 992 works */
+
+@media only screen and (max-width: 992px) {
+    .header-uname-pass {
+        display: none;
+    }
+
+    .signup .login {
+        width: 80px;
+        height: 33px;
+        border-radius: 0.2rem;
+    }
+
+    .app-header .navbar-nav {
+        margin-top: 5px;
+        line-height: 22px;
+        font-size: 3.2vw;
+    }
+ 
+    .smallScreenHide{
+        display: none;
+    }
+    .smallScreenShow{
+        display: flex;
+    }
+    .searchbar {
+        display: none;
+    }
+    .head-refresh{
+        display: none;
+    }
+}
+
+
+
+/* after 992px works */
+
+@media (min-width: 992px) {
+    .relaod-setting-banking-btns {
+        display: none;
+    }
+
+    .open-bets {
+        display: none;
+    }
+
+    .bigScreenShow {
+        display: flex;
+    }
+
+    .bigScreenHide{
+        display: none;
+    }
+   .account-wrap-new{
+    display: block;
+   }
+   .refresh-btn-after-login{
+    display: block;
+   }
+    
+   
+}
+
